@@ -1,0 +1,1016 @@
+{
+ "date": "2025-08-10",
+ "source_file": "Daily Report 11-08-2025.xlsx",
+ "summary": {
+  "day_peak_generation_mw": 13712.73,
+  "day_peak_demand_mw": 13712.73,
+  "evening_peak_generation_mw": 15608.83,
+  "evening_peak_demand_mw": 15670.83,
+  "min_generation_mw": 12097.84,
+  "max_generation_mw": 15608.83,
+  "energy_generated_gwh": 333.244,
+  "energy_unserved_gwh": 0.206,
+  "energy_demand_gwh": 333.45,
+  "max_temperature_c": 32.7,
+  "total_gas_supplied_mmcfd": 1016.96
+ },
+ "hourly": [
+  {
+   "hour": "00:00",
+   "generation_mw": 14293.17,
+   "load_shed_mw": 0,
+   "demand_mw": 14293.17
+  },
+  {
+   "hour": "01:00",
+   "generation_mw": 13871.18,
+   "load_shed_mw": 0,
+   "demand_mw": 13871.18
+  },
+  {
+   "hour": "02:00",
+   "generation_mw": 13539.13,
+   "load_shed_mw": 0,
+   "demand_mw": 13539.13
+  },
+  {
+   "hour": "03:00",
+   "generation_mw": 13091.61,
+   "load_shed_mw": 0,
+   "demand_mw": 13091.61
+  },
+  {
+   "hour": "04:00",
+   "generation_mw": 12867.76,
+   "load_shed_mw": 0,
+   "demand_mw": 12867.76
+  },
+  {
+   "hour": "05:00",
+   "generation_mw": 12669.64,
+   "load_shed_mw": 0,
+   "demand_mw": 12669.64
+  },
+  {
+   "hour": "06:00",
+   "generation_mw": 12097.84,
+   "load_shed_mw": 0,
+   "demand_mw": 12097.84
+  },
+  {
+   "hour": "07:00",
+   "generation_mw": 12286.2,
+   "load_shed_mw": 0,
+   "demand_mw": 12286.2
+  },
+  {
+   "hour": "08:00",
+   "generation_mw": 12364.4,
+   "load_shed_mw": 0,
+   "demand_mw": 12364.4
+  },
+  {
+   "hour": "09:00",
+   "generation_mw": 12618.91,
+   "load_shed_mw": 0,
+   "demand_mw": 12618.91
+  },
+  {
+   "hour": "10:00",
+   "generation_mw": 12852.86,
+   "load_shed_mw": 0,
+   "demand_mw": 12852.86
+  },
+  {
+   "hour": "11:00",
+   "generation_mw": 13247.95,
+   "load_shed_mw": 0,
+   "demand_mw": 13247.95
+  },
+  {
+   "hour": "12:00",
+   "generation_mw": 13712.73,
+   "load_shed_mw": 0,
+   "demand_mw": 13712.73
+  },
+  {
+   "hour": "13:00",
+   "generation_mw": 14081.17,
+   "load_shed_mw": 0,
+   "demand_mw": 14081.17
+  },
+  {
+   "hour": "14:00",
+   "generation_mw": 14069.82,
+   "load_shed_mw": 0,
+   "demand_mw": 14069.82
+  },
+  {
+   "hour": "15:00",
+   "generation_mw": 14205.61,
+   "load_shed_mw": 0,
+   "demand_mw": 14205.61
+  },
+  {
+   "hour": "16:00",
+   "generation_mw": 14183.56,
+   "load_shed_mw": 0,
+   "demand_mw": 14183.56
+  },
+  {
+   "hour": "17:00",
+   "generation_mw": 13732.52,
+   "load_shed_mw": 0,
+   "demand_mw": 13732.52
+  },
+  {
+   "hour": "18:00",
+   "generation_mw": 13185.24,
+   "load_shed_mw": 0,
+   "demand_mw": 13185.24
+  },
+  {
+   "hour": "19:00",
+   "generation_mw": 14519.87,
+   "load_shed_mw": 30.0,
+   "demand_mw": 14549.87
+  },
+  {
+   "hour": "19:30",
+   "generation_mw": 15608.83,
+   "load_shed_mw": 59.0,
+   "demand_mw": 15667.83
+  },
+  {
+   "hour": "20:00",
+   "generation_mw": 15567.92,
+   "load_shed_mw": 51.0,
+   "demand_mw": 15618.92
+  },
+  {
+   "hour": "21:00",
+   "generation_mw": 15359.2,
+   "load_shed_mw": 49.0,
+   "demand_mw": 15408.2
+  },
+  {
+   "hour": "22:00",
+   "generation_mw": 15182.7,
+   "load_shed_mw": 46.0,
+   "demand_mw": 15228.7
+  },
+  {
+   "hour": "23:00",
+   "generation_mw": 15159.7,
+   "load_shed_mw": 30.0,
+   "demand_mw": 15189.7
+  }
+ ],
+ "divisions": [
+  {
+   "division": "Dhaka",
+   "evening_peak_load_mw": 5317.19
+  },
+  {
+   "division": "Khulna",
+   "evening_peak_load_mw": 1863.6
+  },
+  {
+   "division": "Rajshahi",
+   "evening_peak_load_mw": 1599.2
+  },
+  {
+   "division": "Chattogram",
+   "evening_peak_load_mw": 1458.5
+  },
+  {
+   "division": "Cumilla",
+   "evening_peak_load_mw": 1453.87
+  },
+  {
+   "division": "Mymensingh",
+   "evening_peak_load_mw": 1226.0
+  },
+  {
+   "division": "Rangpur",
+   "evening_peak_load_mw": 1016.0
+  },
+  {
+   "division": "Sylhet",
+   "evening_peak_load_mw": 616.0
+  },
+  {
+   "division": "Barishal",
+   "evening_peak_load_mw": 473.0
+  }
+ ],
+ "zone_fuel_summary_mkwhr": {
+  "Dhaka": {
+   "Gas": 42.045,
+   "Coal": 0,
+   "HFO": 9.482,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 0.172,
+   "Import": 0
+  },
+  "Chattogram": {
+   "Gas": 3.942,
+   "Coal": 30.713,
+   "HFO": 2.767,
+   "HSD": 0,
+   "Hydro": 5.278,
+   "Solar": 0.171,
+   "Import": 0
+  },
+  "Cumilla": {
+   "Gas": 27.506,
+   "Coal": 0,
+   "HFO": 10.035,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 0.429,
+   "Import": 0.919
+  },
+  "Mymensingh": {
+   "Gas": 2.538,
+   "Coal": 0,
+   "HFO": 5.205,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 0.159,
+   "Import": 0
+  },
+  "Sylhet": {
+   "Gas": 32.569,
+   "Coal": 0,
+   "HFO": 0,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 0,
+   "Import": 0
+  },
+  "Khulna": {
+   "Gas": 8.883,
+   "Coal": 24.233,
+   "HFO": 0.163,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 0.482,
+   "Import": 22.708
+  },
+  "Barishal": {
+   "Gas": 5.432,
+   "Coal": 38.535,
+   "HFO": 0,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 0.004,
+   "Import": 0
+  },
+  "Rajshahi": {
+   "Gas": 18.483,
+   "Coal": 0,
+   "HFO": 0.7,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 1.166,
+   "Import": 28.865
+  },
+  "Rangpur": {
+   "Gas": 0,
+   "Coal": 5.227,
+   "HFO": 3.255,
+   "HSD": 0,
+   "Hydro": 0,
+   "Solar": 1.004,
+   "Import": 0
+  }
+ },
+ "fuel_mix": {
+  "half_hourly": [
+   {
+    "time": "00:00",
+    "Gas-Public": 3857,
+    "Gas-Pvt": 2108,
+    "HVDC": 900,
+    "Nepal": 38,
+    "Tripura": 44,
+    "Adani": 1446.17,
+    "Hydro": 221,
+    "Coal": 4375,
+    "Solar": 0,
+    "HFO-Public": 247,
+    "HFO-Pvt": 1055
+   },
+   {
+    "time": "00:30",
+    "Gas-Public": 3853.5,
+    "Gas-Pvt": 2081,
+    "HVDC": 900,
+    "Nepal": 38,
+    "Tripura": 44,
+    "Adani": 1450.67,
+    "Hydro": 220.5,
+    "Coal": 4269,
+    "Solar": 0,
+    "HFO-Public": 231.5,
+    "HFO-Pvt": 993
+   },
+   {
+    "time": "01:00",
+    "Gas-Public": 3850,
+    "Gas-Pvt": 2054,
+    "HVDC": 900,
+    "Nepal": 38,
+    "Tripura": 44,
+    "Adani": 1455.18,
+    "Hydro": 220,
+    "Coal": 4163,
+    "Solar": 0,
+    "HFO-Public": 216,
+    "HFO-Pvt": 931
+   },
+   {
+    "time": "01:30",
+    "Gas-Public": 3868.5,
+    "Gas-Pvt": 2056.5,
+    "HVDC": 897.5,
+    "Nepal": 38,
+    "Tripura": 43,
+    "Adani": 1379.15,
+    "Hydro": 220,
+    "Coal": 4102,
+    "Solar": 0,
+    "HFO-Public": 195,
+    "HFO-Pvt": 904
+   },
+   {
+    "time": "02:00",
+    "Gas-Public": 3887,
+    "Gas-Pvt": 2059,
+    "HVDC": 895,
+    "Nepal": 38,
+    "Tripura": 42,
+    "Adani": 1303.13,
+    "Hydro": 220,
+    "Coal": 4041,
+    "Solar": 0,
+    "HFO-Public": 174,
+    "HFO-Pvt": 877
+   },
+   {
+    "time": "02:30",
+    "Gas-Public": 3886,
+    "Gas-Pvt": 2059.5,
+    "HVDC": 895.5,
+    "Nepal": 38,
+    "Tripura": 42,
+    "Adani": 1310.87,
+    "Hydro": 219.5,
+    "Coal": 3892.5,
+    "Solar": 0,
+    "HFO-Public": 149,
+    "HFO-Pvt": 819.5
+   },
+   {
+    "time": "03:00",
+    "Gas-Public": 3885,
+    "Gas-Pvt": 2060,
+    "HVDC": 896,
+    "Nepal": 38,
+    "Tripura": 42,
+    "Adani": 1318.61,
+    "Hydro": 219,
+    "Coal": 3744,
+    "Solar": 0,
+    "HFO-Public": 124,
+    "HFO-Pvt": 762
+   },
+   {
+    "time": "03:30",
+    "Gas-Public": 3876.5,
+    "Gas-Pvt": 2061,
+    "HVDC": 896,
+    "Nepal": 38,
+    "Tripura": 41,
+    "Adani": 1260.68,
+    "Hydro": 219,
+    "Coal": 3724,
+    "Solar": 0,
+    "HFO-Public": 115.5,
+    "HFO-Pvt": 744.5
+   },
+   {
+    "time": "04:00",
+    "Gas-Public": 3868,
+    "Gas-Pvt": 2062,
+    "HVDC": 896,
+    "Nepal": 38,
+    "Tripura": 40,
+    "Adani": 1202.76,
+    "Hydro": 219,
+    "Coal": 3704,
+    "Solar": 0,
+    "HFO-Public": 107,
+    "HFO-Pvt": 727
+   },
+   {
+    "time": "04:30",
+    "Gas-Public": 3853.5,
+    "Gas-Pvt": 2060.5,
+    "HVDC": 896,
+    "Nepal": 38,
+    "Tripura": 40,
+    "Adani": 1207.7,
+    "Hydro": 219,
+    "Coal": 3678,
+    "Solar": 0,
+    "HFO-Public": 94.5,
+    "HFO-Pvt": 676
+   },
+   {
+    "time": "05:00",
+    "Gas-Public": 3839,
+    "Gas-Pvt": 2059,
+    "HVDC": 896,
+    "Nepal": 38,
+    "Tripura": 40,
+    "Adani": 1212.64,
+    "Hydro": 219,
+    "Coal": 3652,
+    "Solar": 0,
+    "HFO-Public": 82,
+    "HFO-Pvt": 625
+   },
+   {
+    "time": "05:30",
+    "Gas-Public": 3722.5,
+    "Gas-Pvt": 2029,
+    "HVDC": 895.5,
+    "Nepal": 38,
+    "Tripura": 38,
+    "Adani": 1171.08,
+    "Hydro": 219,
+    "Coal": 3617,
+    "Solar": 6.16,
+    "HFO-Public": 73,
+    "HFO-Pvt": 566.5
+   },
+   {
+    "time": "06:00",
+    "Gas-Public": 3606,
+    "Gas-Pvt": 1999,
+    "HVDC": 895,
+    "Nepal": 38,
+    "Tripura": 36,
+    "Adani": 1129.52,
+    "Hydro": 219,
+    "Coal": 3582,
+    "Solar": 12.32,
+    "HFO-Public": 64,
+    "HFO-Pvt": 508
+   },
+   {
+    "time": "06:30",
+    "Gas-Public": 3635.5,
+    "Gas-Pvt": 2036.5,
+    "HVDC": 895,
+    "Nepal": 38,
+    "Tripura": 36,
+    "Adani": 1074.28,
+    "Hydro": 220,
+    "Coal": 3615.5,
+    "Solar": 45.74,
+    "HFO-Public": 74,
+    "HFO-Pvt": 513.5
+   },
+   {
+    "time": "07:00",
+    "Gas-Public": 3665,
+    "Gas-Pvt": 2074,
+    "HVDC": 895,
+    "Nepal": 38,
+    "Tripura": 36,
+    "Adani": 1019.03,
+    "Hydro": 221,
+    "Coal": 3649,
+    "Solar": 79.17,
+    "HFO-Public": 84,
+    "HFO-Pvt": 519
+   },
+   {
+    "time": "07:30",
+    "Gas-Public": 3614,
+    "Gas-Pvt": 2051.5,
+    "HVDC": 898,
+    "Nepal": 38,
+    "Tripura": 35,
+    "Adani": 1017.01,
+    "Hydro": 221,
+    "Coal": 3676,
+    "Solar": 137.78,
+    "HFO-Public": 95.5,
+    "HFO-Pvt": 538
+   },
+   {
+    "time": "08:00",
+    "Gas-Public": 3563,
+    "Gas-Pvt": 2029,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 34,
+    "Adani": 1015,
+    "Hydro": 221,
+    "Coal": 3703,
+    "Solar": 196.4,
+    "HFO-Public": 107,
+    "HFO-Pvt": 557
+   },
+   {
+    "time": "08:30",
+    "Gas-Public": 3586.5,
+    "Gas-Pvt": 2031,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 34,
+    "Adani": 1023.5,
+    "Hydro": 221.5,
+    "Coal": 3700.5,
+    "Solar": 232.16,
+    "HFO-Public": 145,
+    "HFO-Pvt": 578.5
+   },
+   {
+    "time": "09:00",
+    "Gas-Public": 3610,
+    "Gas-Pvt": 2033,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 34,
+    "Adani": 1032,
+    "Hydro": 222,
+    "Coal": 3698,
+    "Solar": 267.91,
+    "HFO-Public": 183,
+    "HFO-Pvt": 600
+   },
+   {
+    "time": "09:30",
+    "Gas-Public": 3621.5,
+    "Gas-Pvt": 2038.5,
+    "HVDC": 901.5,
+    "Nepal": 38,
+    "Tripura": 34,
+    "Adani": 1036,
+    "Hydro": 221.5,
+    "Coal": 3709.5,
+    "Solar": 335.88,
+    "HFO-Public": 183,
+    "HFO-Pvt": 616.5
+   },
+   {
+    "time": "10:00",
+    "Gas-Public": 3633,
+    "Gas-Pvt": 2044,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 34,
+    "Adani": 1040,
+    "Hydro": 221,
+    "Coal": 3721,
+    "Solar": 403.86,
+    "HFO-Public": 183,
+    "HFO-Pvt": 633
+   },
+   {
+    "time": "10:30",
+    "Gas-Public": 3647,
+    "Gas-Pvt": 2051,
+    "HVDC": 901.5,
+    "Nepal": 38,
+    "Tripura": 35,
+    "Adani": 1035.5,
+    "Hydro": 221,
+    "Coal": 3850.5,
+    "Solar": 436.9,
+    "HFO-Public": 183,
+    "HFO-Pvt": 651
+   },
+   {
+    "time": "11:00",
+    "Gas-Public": 3661,
+    "Gas-Pvt": 2058,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 36,
+    "Adani": 1031,
+    "Hydro": 221,
+    "Coal": 3980,
+    "Solar": 469.95,
+    "HFO-Public": 183,
+    "HFO-Pvt": 669
+   },
+   {
+    "time": "11:30",
+    "Gas-Public": 3713,
+    "Gas-Pvt": 2035.5,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 38,
+    "Adani": 1030,
+    "Hydro": 221,
+    "Coal": 4037.5,
+    "Solar": 505.84,
+    "HFO-Public": 189.5,
+    "HFO-Pvt": 771
+   },
+   {
+    "time": "12:00",
+    "Gas-Public": 3765,
+    "Gas-Pvt": 2013,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 40,
+    "Adani": 1029,
+    "Hydro": 221,
+    "Coal": 4095,
+    "Solar": 541.73,
+    "HFO-Public": 196,
+    "HFO-Pvt": 873
+   },
+   {
+    "time": "12:30",
+    "Gas-Public": 3757.5,
+    "Gas-Pvt": 1998,
+    "HVDC": 901.5,
+    "Nepal": 38,
+    "Tripura": 40,
+    "Adani": 1049,
+    "Hydro": 220.5,
+    "Coal": 4212.5,
+    "Solar": 518.45,
+    "HFO-Public": 196,
+    "HFO-Pvt": 963
+   },
+   {
+    "time": "13:00",
+    "Gas-Public": 3750,
+    "Gas-Pvt": 1983,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 40,
+    "Adani": 1069,
+    "Hydro": 220,
+    "Coal": 4330,
+    "Solar": 495.17,
+    "HFO-Public": 196,
+    "HFO-Pvt": 1053
+   },
+   {
+    "time": "13:30",
+    "Gas-Public": 3787,
+    "Gas-Pvt": 1932,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 42,
+    "Adani": 1119.15,
+    "Hydro": 219.5,
+    "Coal": 4278,
+    "Solar": 505.35,
+    "HFO-Public": 195.5,
+    "HFO-Pvt": 1052.5
+   },
+   {
+    "time": "14:00",
+    "Gas-Public": 3824,
+    "Gas-Pvt": 1881,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 44,
+    "Adani": 1169.3,
+    "Hydro": 219,
+    "Coal": 4226,
+    "Solar": 515.52,
+    "HFO-Public": 195,
+    "HFO-Pvt": 1052
+   },
+   {
+    "time": "14:30",
+    "Gas-Public": 3884,
+    "Gas-Pvt": 1917.5,
+    "HVDC": 901.5,
+    "Nepal": 38,
+    "Tripura": 44,
+    "Adani": 1176.47,
+    "Hydro": 219,
+    "Coal": 4262,
+    "Solar": 447.14,
+    "HFO-Public": 195,
+    "HFO-Pvt": 1051.1
+   },
+   {
+    "time": "15:00",
+    "Gas-Public": 3944,
+    "Gas-Pvt": 1954,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 44,
+    "Adani": 1183.64,
+    "Hydro": 219,
+    "Coal": 4298,
+    "Solar": 378.77,
+    "HFO-Public": 195,
+    "HFO-Pvt": 1050.2
+   },
+   {
+    "time": "15:30",
+    "Gas-Public": 3910.5,
+    "Gas-Pvt": 1941.5,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 43,
+    "Adani": 1172.99,
+    "Hydro": 219.5,
+    "Coal": 4340.5,
+    "Solar": 311.49,
+    "HFO-Public": 195,
+    "HFO-Pvt": 1111.6
+   },
+   {
+    "time": "16:00",
+    "Gas-Public": 3877,
+    "Gas-Pvt": 1929,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 42,
+    "Adani": 1162.35,
+    "Hydro": 220,
+    "Coal": 4383,
+    "Solar": 244.21,
+    "HFO-Public": 195,
+    "HFO-Pvt": 1173
+   },
+   {
+    "time": "16:30",
+    "Gas-Public": 3838,
+    "Gas-Pvt": 1913,
+    "HVDC": 901.5,
+    "Nepal": 38,
+    "Tripura": 42,
+    "Adani": 1160.07,
+    "Hydro": 219,
+    "Coal": 4279,
+    "Solar": 175.47,
+    "HFO-Public": 195,
+    "HFO-Pvt": 1173
+   },
+   {
+    "time": "17:00",
+    "Gas-Public": 3799,
+    "Gas-Pvt": 1897,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 42,
+    "Adani": 1157.78,
+    "Hydro": 218,
+    "Coal": 4175,
+    "Solar": 106.74,
+    "HFO-Public": 195,
+    "HFO-Pvt": 1173
+   },
+   {
+    "time": "17:30",
+    "Gas-Public": 3740.5,
+    "Gas-Pvt": 1878.5,
+    "HVDC": 901.5,
+    "Nepal": 38,
+    "Tripura": 41,
+    "Adani": 1107.94,
+    "Hydro": 218,
+    "Coal": 4070,
+    "Solar": 69.33,
+    "HFO-Public": 194.5,
+    "HFO-Pvt": 1171.1
+   },
+   {
+    "time": "18:00",
+    "Gas-Public": 3682,
+    "Gas-Pvt": 1860,
+    "HVDC": 901,
+    "Nepal": 38,
+    "Tripura": 40,
+    "Adani": 1058.11,
+    "Hydro": 218,
+    "Coal": 3965,
+    "Solar": 31.93,
+    "HFO-Public": 194,
+    "HFO-Pvt": 1169.2
+   },
+   {
+    "time": "18:30",
+    "Gas-Public": 3805.5,
+    "Gas-Pvt": 1899.5,
+    "HVDC": 901.5,
+    "Nepal": 38,
+    "Tripura": 44,
+    "Adani": 1104.99,
+    "Hydro": 218,
+    "Coal": 4123,
+    "Solar": 15.96,
+    "HFO-Public": 340.5,
+    "HFO-Pvt": 1337.1
+   },
+   {
+    "time": "19:00",
+    "Gas-Public": 3929,
+    "Gas-Pvt": 1939,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 48,
+    "Adani": 1151.87,
+    "Hydro": 218,
+    "Coal": 4281,
+    "Solar": 0,
+    "HFO-Public": 487,
+    "HFO-Pvt": 1505
+   },
+   {
+    "time": "19:30",
+    "Gas-Public": 3901,
+    "Gas-Pvt": 2030,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 46,
+    "Adani": 1320.83,
+    "Hydro": 218,
+    "Coal": 4524,
+    "Solar": 0,
+    "HFO-Public": 559,
+    "HFO-Pvt": 2056
+   },
+   {
+    "time": "20:00",
+    "Gas-Public": 3779,
+    "Gas-Pvt": 2014,
+    "HVDC": 903,
+    "Nepal": 38,
+    "Tripura": 46,
+    "Adani": 1397.92,
+    "Hydro": 218,
+    "Coal": 4463,
+    "Solar": 0,
+    "HFO-Public": 579,
+    "HFO-Pvt": 2116
+   },
+   {
+    "time": "20:30",
+    "Gas-Public": 3817.5,
+    "Gas-Pvt": 2009.5,
+    "HVDC": 902.5,
+    "Nepal": 38,
+    "Tripura": 38,
+    "Adani": 1424.96,
+    "Hydro": 218,
+    "Coal": 4431.5,
+    "Solar": 0,
+    "HFO-Public": 508.5,
+    "HFO-Pvt": 2060.6
+   },
+   {
+    "time": "21:00",
+    "Gas-Public": 3856,
+    "Gas-Pvt": 2005,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 30,
+    "Adani": 1452,
+    "Hydro": 218,
+    "Coal": 4400,
+    "Solar": 0,
+    "HFO-Public": 438,
+    "HFO-Pvt": 2005.2
+   },
+   {
+    "time": "21:30",
+    "Gas-Public": 3910.5,
+    "Gas-Pvt": 2049.75,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 30,
+    "Adani": 1444,
+    "Hydro": 218,
+    "Coal": 4407,
+    "Solar": 0,
+    "HFO-Public": 438,
+    "HFO-Pvt": 1821.7
+   },
+   {
+    "time": "22:00",
+    "Gas-Public": 3965,
+    "Gas-Pvt": 2094.5,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 30,
+    "Adani": 1436,
+    "Hydro": 218,
+    "Coal": 4414,
+    "Solar": 0,
+    "HFO-Public": 438,
+    "HFO-Pvt": 1638.2
+   },
+   {
+    "time": "22:30",
+    "Gas-Public": 3952.5,
+    "Gas-Pvt": 2097,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 31,
+    "Adani": 1440,
+    "Hydro": 218,
+    "Coal": 4418,
+    "Solar": 0,
+    "HFO-Public": 442.5,
+    "HFO-Pvt": 1624.7
+   },
+   {
+    "time": "23:00",
+    "Gas-Public": 3940,
+    "Gas-Pvt": 2099.5,
+    "HVDC": 902,
+    "Nepal": 38,
+    "Tripura": 32,
+    "Adani": 1444,
+    "Hydro": 218,
+    "Coal": 4422,
+    "Solar": 0,
+    "HFO-Public": 447,
+    "HFO-Pvt": 1611.2
+   }
+  ],
+  "avg_mw_by_fuel": {
+   "Gas-Public": 3791.8,
+   "Gas-Pvt": 2012.0,
+   "HVDC": 899.9,
+   "Nepal": 38.0,
+   "Tripura": 39.2,
+   "Adani": 1200.7,
+   "Hydro": 219.5,
+   "Coal": 4057.1,
+   "Solar": 159.3,
+   "HFO-Public": 227.6,
+   "HFO-Pvt": 1035.7
+  },
+  "energy_mwh_by_fuel": {
+   "Gas-Public": 91003.2,
+   "Gas-Pvt": 48288.0,
+   "HVDC": 21597.6,
+   "Nepal": 912.0,
+   "Tripura": 940.8,
+   "Adani": 28816.8,
+   "Hydro": 5268.0,
+   "Coal": 97370.4,
+   "Solar": 3823.2,
+   "HFO-Public": 5462.4,
+   "HFO-Pvt": 24856.8
+  },
+  "fuel_mix_pct": {
+   "Gas-Public": 27.7,
+   "Gas-Pvt": 14.7,
+   "HVDC": 6.6,
+   "Nepal": 0.3,
+   "Tripura": 0.3,
+   "Adani": 8.8,
+   "Hydro": 1.6,
+   "Coal": 29.7,
+   "Solar": 1.2,
+   "HFO-Public": 1.7,
+   "HFO-Pvt": 7.6
+  },
+  "co2_tonnes_by_fuel": {
+   "Gas-Public": 40951.4,
+   "Gas-Pvt": 21729.6,
+   "Adani": 27376.0,
+   "Hydro": 0.0,
+   "Coal": 92501.9,
+   "Solar": 0.0,
+   "HFO-Public": 3987.6,
+   "HFO-Pvt": 18145.5
+  },
+  "co2_total_tonnes_estimated": 204692.0,
+  "co2_unestimated_mwh": 23450.4,
+  "fuel_labels": {
+   "Gas-Public": "Gas (public)",
+   "Gas-Pvt": "Gas (private)",
+   "HVDC": "Import (HVDC)",
+   "Nepal": "Import (Nepal)",
+   "Tripura": "Import (Tripura)",
+   "Adani": "Import (Adani, coal)",
+   "Hydro": "Hydro",
+   "Coal": "Coal",
+   "Solar": "Solar",
+   "HFO-Public": "Oil - HFO (public)",
+   "HFO-Pvt": "Oil - HFO (private)"
+  }
+ }
+}

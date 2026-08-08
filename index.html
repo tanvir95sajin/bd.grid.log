@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Log &mdash; Bangladesh national grid, daily</title>
+<meta name="description" content="Daily generation, demand, load-shedding, fuel mix and CO2 estimates for Bangladesh's national power grid, sourced from PGCB/NLDC daily reports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark">&#9889;</span>
+      <div>
+        <div class="brand-name">GRIDLOG</div>
+        <div class="brand-sub">Bangladesh national grid &mdash; daily</div>
+      </div>
+    </div>
+    <div class="date-picker">
+      <label for="date-select">Log date</label>
+      <select id="date-select"></select>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <a href="index.html" class="active">Today</a>
+  <a href="plants.html">Plants</a>
+  <a href="areas.html">Areas</a>
+  <a href="substations.html">Substations</a>
+  </nav>
+</header>
+
+<main id="app">
+  <div id="loading" class="loading">Loading log&hellip;</div>
+  <div id="content" class="content" hidden>
+
+    <section class="meter-strip" id="meter-strip" aria-label="Key figures for the selected day"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Generation vs. demand</h2>
+        <span class="panel-note">24 hours, in megawatts</span>
+      </div>
+      <div class="chart-wrap chart-tall">
+        <canvas id="genChart" role="img" aria-label="Line chart of hourly generation and demand"></canvas>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Load-shedding by hour</h2>
+        <span class="panel-note">Demand PGCB could not meet, in megawatts</span>
+      </div>
+      <div class="chart-wrap chart-short">
+        <canvas id="shedChart" role="img" aria-label="Bar chart of hourly load-shedding"></canvas>
+      </div>
+    </section>
+
+    <section class="panel two-col">
+      <div>
+        <div class="panel-head">
+          <h2>Where the power comes from</h2>
+          <span class="panel-note">Average share of generation, by fuel</span>
+        </div>
+        <div class="chart-wrap chart-donut">
+          <canvas id="fuelChart" role="img" aria-label="Donut chart of generation mix by fuel type"></canvas>
+        </div>
+        <ul class="legend" id="fuel-legend"></ul>
+      </div>
+      <div>
+        <div class="panel-head">
+          <h2>Estimated CO&#8322; for the day</h2>
+          <span class="panel-note">Rough estimate &mdash; see methodology</span>
+        </div>
+        <table class="co2-table" id="co2-table"></table>
+        <p class="co2-caveat" id="co2-caveat"></p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Peak load by division</h2>
+        <span class="panel-note">Evening peak hour</span>
+      </div>
+      <div id="division-bars" class="division-bars"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>More detail</h2>
+      </div>
+      <p class="page-intro" style="margin-bottom:0;">
+        Every plant and why any are offline: <a href="plants.html" style="color:var(--amber)">Plants</a>.
+        Generation and load by zone: <a href="areas.html" style="color:var(--amber)">Areas</a>.
+        Substation load and voltage: <a href="substations.html" style="color:var(--amber)">Substations</a>.
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Where the load is</h2>
+        <span class="panel-note">Evening peak load by zone</span>
+      </div>
+      <p class="page-intro" style="margin-bottom: 16px;">
+        Bubble size and shade both track evening peak load. The report has no coordinates for individual plants or substations, so this is zone-level, not a pin map &mdash; see the note below.
+      </p>
+      <div class="map-layout">
+        <div id="zone-map" class="zone-map"></div>
+        <div class="map-detail" id="map-detail"></div>
+      </div>
+      <p class="map-footnote">
+        Plants and substations aren't plotted individually because this report doesn't include coordinates for them. If a list of plant or substation locations becomes available, pins can be added the same way this zone data was.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Source: PGCB, National Load Dispatch Center daily reports. CO&#8322; figures are planning estimates from standard fuel emission factors, not audited emissions data &mdash; see the note above the table. This is an independent project, not affiliated with or endorsed by PGCB.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

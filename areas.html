@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Areas &mdash; Grid Log</title>
+<meta name="description" content="Generation by fuel and peak load for each division on Bangladesh's national grid.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark">&#9889;</span>
+      <div>
+        <div class="brand-name">GRIDLOG</div>
+        <div class="brand-sub">Bangladesh national grid &mdash; daily</div>
+      </div>
+    </div>
+    <div class="date-picker">
+      <label for="date-select">Log date</label>
+      <select id="date-select"></select>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <a href="index.html">Today</a>
+  <a href="plants.html">Plants</a>
+  <a href="areas.html" class="active">Areas</a>
+  <a href="substations.html">Substations</a>
+  </nav>
+</header>
+
+<main id="app">
+  <div id="loading" class="loading">Loading log&hellip;</div>
+  <div id="content" class="content" hidden>
+
+    <p class="page-intro">Generation by fuel and peak load for each of PGCB's nine grid zones. Substations aren't mapped to a zone in the source report, so that breakdown isn't available here &mdash; see Substations for the full list.</p>
+
+    <div class="area-tabs" id="area-tabs"></div>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2 id="area-title">&nbsp;</h2>
+        <span class="panel-note">Evening peak hour</span>
+      </div>
+      <div class="meter-strip" id="area-meter" style="margin-bottom: 0;"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Generation by fuel</h2>
+        <span class="panel-note">Energy for the day, million kWh</span>
+      </div>
+      <div class="area-fuel-bars" id="area-fuel-bars"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>All zones compared</h2>
+        <span class="panel-note">Evening peak load, MW</span>
+      </div>
+      <div class="division-bars" id="all-division-bars"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Source: PGCB, National Load Dispatch Center daily reports. This is an independent project, not affiliated with or endorsed by PGCB.</p>
+</footer>
+
+<script src="areas.js"></script>
+</body>
+</html>

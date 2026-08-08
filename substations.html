@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substations &mdash; Grid Log</title>
+<meta name="description" content="Peak load served and voltage readings for every grid substation in Bangladesh's national grid daily report.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark">&#9889;</span>
+      <div>
+        <div class="brand-name">GRIDLOG</div>
+        <div class="brand-sub">Bangladesh national grid &mdash; daily</div>
+      </div>
+    </div>
+    <div class="date-picker">
+      <label for="date-select">Log date</label>
+      <select id="date-select"></select>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <a href="index.html">Today</a>
+  <a href="plants.html">Plants</a>
+  <a href="areas.html">Areas</a>
+  <a href="substations.html" class="active">Substations</a>
+  </nav>
+</header>
+
+<main id="app">
+  <div id="loading" class="loading">Loading log&hellip;</div>
+  <div id="content" class="content" hidden>
+
+    <p class="page-intro">Peak load served and voltage readings for every substation named in the day's report. A dash means that particular reading wasn't reported for this substation.</p>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>All substations</h2>
+        <span class="panel-note" id="sub-count-note"></span>
+      </div>
+
+      <div class="filter-bar" id="voltage-filter">
+        <span class="filter-chip active" data-level="all">All</span>
+        <span class="filter-chip" data-level="400 kV">400 kV</span>
+        <span class="filter-chip" data-level="230 kV">230 kV</span>
+        <span class="filter-chip" data-level="132 kV">132 kV</span>
+      </div>
+
+      <input type="text" id="sub-search" class="plant-search" placeholder="Search a substation, e.g. Aminbazar, Bibiana&hellip;">
+
+      <div class="plant-layout">
+        <ul class="plant-list" id="sub-list"></ul>
+        <div class="plant-detail" id="sub-detail">
+          <p class="plant-detail-empty">Select a substation for its load and voltage readings.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Source: PGCB, National Load Dispatch Center daily reports. This is an independent project, not affiliated with or endorsed by PGCB.</p>
+</footer>
+
+<script src="substations.js"></script>
+</body>
+</html>

@@ -1,0 +1,2039 @@
+{
+ "date": "2025-08-03",
+ "substations": {
+  "Tangail": {
+   "name": "Tangail",
+   "load_mw": 184.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rampal": {
+   "name": "Rampal",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 232.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 220.0,
+   "min_voltage_time": "00:00"
+  },
+  "Beanibazar": {
+   "name": "Beanibazar",
+   "load_mw": 68.0,
+   "load_time": "01:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 119.0,
+   "min_voltage_time": "00:00"
+  },
+  "Feni": {
+   "name": "Feni",
+   "load_mw": 100.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 121.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 117.0,
+   "min_voltage_time": "16:00"
+  },
+  "Sunamganj": {
+   "name": "Sunamganj",
+   "load_mw": 52.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 114.0,
+   "min_voltage_time": "00:00"
+  },
+  "Sirajganj": {
+   "name": "Sirajganj",
+   "load_mw": 110.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "10:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Agrabad": {
+   "name": "Agrabad",
+   "load_mw": 92.0,
+   "load_time": "15:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Chauddagram": {
+   "name": "Chauddagram",
+   "load_mw": 69.0,
+   "load_time": "01:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 123.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 117.0,
+   "min_voltage_time": "23:00"
+  },
+  "Chuadanga": {
+   "name": "Chuadanga",
+   "load_mw": 115.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 122.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kushtia": {
+   "name": "Kushtia",
+   "load_mw": 158.0,
+   "load_time": "18:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "TK": {
+   "name": "TK",
+   "load_mw": 36.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Halishahar": {
+   "name": "Halishahar",
+   "load_mw": 69.5,
+   "load_time": "15:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shyampur": {
+   "name": "Shyampur",
+   "load_mw": 154.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "10:00"
+  },
+  "Bajitpur": {
+   "name": "Bajitpur",
+   "load_mw": 74.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Barapukuria": {
+   "name": "Barapukuria",
+   "load_mw": 63.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "13:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Chapai": {
+   "name": "Chapai",
+   "load_mw": 63.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "01:00"
+  },
+  "MI_Cement": {
+   "name": "MI_Cement",
+   "load_mw": 13.8,
+   "load_time": "02:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "10:00"
+  },
+  "Khulshi": {
+   "name": "Khulshi",
+   "load_mw": 162.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Ishurdi": {
+   "name": "Ishurdi",
+   "load_mw": 82.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 132.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kamrangirchar": {
+   "name": "Kamrangirchar",
+   "load_mw": 78.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "12:00"
+  },
+  "Ghorashal-230": {
+   "name": "Ghorashal-230",
+   "load_mw": 81.0,
+   "load_time": "22:00",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 228.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 216.0,
+   "min_voltage_time": "12:00"
+  },
+  "Gollamari": {
+   "name": "Gollamari",
+   "load_mw": 96.0,
+   "load_time": "23:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "BSRM": {
+   "name": "BSRM",
+   "load_mw": 205.0,
+   "load_time": "07:00",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 225.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 218.0,
+   "min_voltage_time": "00:00"
+  },
+  "Gulshan": {
+   "name": "Gulshan",
+   "load_mw": 74.0,
+   "load_time": "11:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "11:00"
+  },
+  "Madaripur": {
+   "name": "Madaripur",
+   "load_mw": 115.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bhangura": {
+   "name": "Bhangura",
+   "load_mw": 37.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "11:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Savar": {
+   "name": "Savar",
+   "load_mw": 245.0,
+   "load_time": "10:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "19:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "10:00"
+  },
+  "Ashuganj-400": {
+   "name": "Ashuganj-400",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 234.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 220.0,
+   "min_voltage_time": "11:00"
+  },
+  "Baroirhat": {
+   "name": "Baroirhat",
+   "load_mw": 70.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 123.0,
+   "max_voltage_time": "19:00",
+   "min_voltage_kv": 118.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bhaluka": {
+   "name": "Bhaluka",
+   "load_mw": 152.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Brahmanbaria": {
+   "name": "Brahmanbaria",
+   "load_mw": 131.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "14:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Postogola": {
+   "name": "Postogola",
+   "load_mw": 58.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "11:00"
+  },
+  "Mirsorai": {
+   "name": "Mirsorai",
+   "load_mw": 11.0,
+   "load_time": "15:00",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 226.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 219.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bashundhara": {
+   "name": "Bashundhara",
+   "load_mw": 209.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "09:00"
+  },
+  "Haripur": {
+   "name": "Haripur",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rangamati": {
+   "name": "Rangamati",
+   "load_mw": 24.0,
+   "load_time": "20:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "04:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bog-Sherpur": {
+   "name": "Bog-Sherpur",
+   "load_mw": 66.0,
+   "load_time": "03:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Chhatak": {
+   "name": "Chhatak",
+   "load_mw": 39.0,
+   "load_time": "01:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 115.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kallyanpur": {
+   "name": "Kallyanpur",
+   "load_mw": 114.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "10:00"
+  },
+  "SSM": {
+   "name": "SSM",
+   "load_mw": 0.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "02:00",
+   "min_voltage_kv": 130.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kabirpur": {
+   "name": "Kabirpur",
+   "load_mw": 218.0,
+   "load_time": "10:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kulaura": {
+   "name": "Kulaura",
+   "load_mw": 51.0,
+   "load_time": "02:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Jamalpur": {
+   "name": "Jamalpur",
+   "load_mw": 126.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 140.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 133.0,
+   "min_voltage_time": "12:00"
+  },
+  "Baroaulia": {
+   "name": "Baroaulia",
+   "load_mw": 61.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kalurghat": {
+   "name": "Kalurghat",
+   "load_mw": 68.0,
+   "load_time": "10:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shikalbaha": {
+   "name": "Shikalbaha",
+   "load_mw": 8.0,
+   "load_time": "09:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 120.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 116.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bangabhaban": {
+   "name": "Bangabhaban",
+   "load_mw": 20.0,
+   "load_time": "10:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "11:00"
+  },
+  "Charsaidpur": {
+   "name": "Charsaidpur",
+   "load_mw": 40.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "00:00"
+  },
+  "Cumilla(S)": {
+   "name": "Cumilla(S)",
+   "load_mw": 151.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "23:00"
+  },
+  "Narinda": {
+   "name": "Narinda",
+   "load_mw": 86.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "10:00"
+  },
+  "Srinagar": {
+   "name": "Srinagar",
+   "load_mw": 48.02,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "11:00"
+  },
+  "Cumilla(N)": {
+   "name": "Cumilla(N)",
+   "load_mw": 130.0,
+   "load_time": "14:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "17:00",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "23:00"
+  },
+  "Jaldhaka": {
+   "name": "Jaldhaka",
+   "load_mw": 87.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 118.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bogura-230": {
+   "name": "Bogura-230",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 141.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 130.0,
+   "min_voltage_time": "00:00"
+  },
+  "Ruppur": {
+   "name": "Ruppur",
+   "load_mw": 7.0,
+   "load_time": "15:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 132.0,
+   "min_voltage_time": "00:00"
+  },
+  "Baghabari": {
+   "name": "Baghabari",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 236.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 226.0,
+   "min_voltage_time": "00:00"
+  },
+  "Dhamrai": {
+   "name": "Dhamrai",
+   "load_mw": 116.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "12:00"
+  },
+  "Mirpur": {
+   "name": "Mirpur",
+   "load_mw": 129.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "04:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "10:00"
+  },
+  "Borhanuddin": {
+   "name": "Borhanuddin",
+   "load_mw": 95.0,
+   "load_time": "19:00",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 233.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 227.0,
+   "min_voltage_time": "00:00"
+  },
+  "KSRM": {
+   "name": "KSRM",
+   "load_mw": 42.0,
+   "load_time": "18:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "11:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bogura-400": {
+   "name": "Bogura-400",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 238.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 224.0,
+   "min_voltage_time": "00:00"
+  },
+  "Chowmuhani": {
+   "name": "Chowmuhani",
+   "load_mw": 193.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 119.0,
+   "max_voltage_time": "12:00",
+   "min_voltage_kv": 111.0,
+   "min_voltage_time": "01:00"
+  },
+  "Motijheel": {
+   "name": "Motijheel",
+   "load_mw": 47.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "12:00"
+  },
+  "Khulna(S)": {
+   "name": "Khulna(S)",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 233.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 220.0,
+   "min_voltage_time": "00:00"
+  },
+  "Maijdee": {
+   "name": "Maijdee",
+   "load_mw": 15.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 119.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 111.0,
+   "min_voltage_time": "01:00"
+  },
+  "Chandpur": {
+   "name": "Chandpur",
+   "load_mw": 79.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 126.0,
+   "max_voltage_time": "12:00",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bhandaria": {
+   "name": "Bhandaria",
+   "load_mw": 58.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 117.0,
+   "min_voltage_time": "23:00"
+  },
+  "AKSML": {
+   "name": "AKSML",
+   "load_mw": 133.0,
+   "load_time": "11:00",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 227.0,
+   "max_voltage_time": "01:00",
+   "min_voltage_kv": 222.0,
+   "min_voltage_time": "00:00"
+  },
+  "Ullahpara": {
+   "name": "Ullahpara",
+   "load_mw": 39.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Niamatpur": {
+   "name": "Niamatpur",
+   "load_mw": 71.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Payra": {
+   "name": "Payra",
+   "load_mw": 36.0,
+   "load_time": "23:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 133.0,
+   "min_voltage_time": "00:00"
+  },
+  "Matuail": {
+   "name": "Matuail",
+   "load_mw": 68.0,
+   "load_time": "11:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 123.0,
+   "min_voltage_time": "11:00"
+  },
+  "Daganbhuiyan": {
+   "name": "Daganbhuiyan",
+   "load_mw": 0.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 121.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 113.0,
+   "min_voltage_time": "01:00"
+  },
+  "Natore": {
+   "name": "Natore",
+   "load_mw": 140.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Satkhira": {
+   "name": "Satkhira",
+   "load_mw": 134.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 122.0,
+   "min_voltage_time": "00:00"
+  },
+  "Meghnaghat-400": {
+   "name": "Meghnaghat-400",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 228.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 216.0,
+   "min_voltage_time": "12:00"
+  },
+  "Agargaon": {
+   "name": "Agargaon",
+   "load_mw": 138.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "11:00"
+  },
+  "Tongi": {
+   "name": "Tongi",
+   "load_mw": 115.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "08:00"
+  },
+  "Juldah": {
+   "name": "Juldah",
+   "load_mw": 14.5,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "19:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "HaripurSBU": {
+   "name": "HaripurSBU",
+   "load_mw": 150.0,
+   "load_time": "11:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "04:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "10:00"
+  },
+  "Muradnagar": {
+   "name": "Muradnagar",
+   "load_mw": 40.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 124.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 119.0,
+   "min_voltage_time": "00:00"
+  },
+  "Khagrachori": {
+   "name": "Khagrachori",
+   "load_mw": 32.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bheramara(GK)": {
+   "name": "Bheramara(GK)",
+   "load_mw": 66.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 132.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rajendrapur": {
+   "name": "Rajendrapur",
+   "load_mw": 134.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 123.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rajshahi": {
+   "name": "Rajshahi",
+   "load_mw": 103.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "23:00"
+  },
+  "Aftabnagar": {
+   "name": "Aftabnagar",
+   "load_mw": 56.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 139.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "11:00"
+  },
+  "Ashuganj": {
+   "name": "Ashuganj",
+   "load_mw": 100.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 143.0,
+   "max_voltage_time": "14:00",
+   "min_voltage_kv": 135.0,
+   "min_voltage_time": "00:00"
+  },
+  "Sonargaon": {
+   "name": "Sonargaon",
+   "load_mw": 120.0,
+   "load_time": "01:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 126.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "11:00"
+  },
+  "Manikganj": {
+   "name": "Manikganj",
+   "load_mw": 126.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 127.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "00:00"
+  },
+  "Joypurhat": {
+   "name": "Joypurhat",
+   "load_mw": 64.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "00:00"
+  },
+  "Barguna": {
+   "name": "Barguna",
+   "load_mw": 22.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 129.0,
+   "min_voltage_time": "22:00"
+  },
+  "Benapole": {
+   "name": "Benapole",
+   "load_mw": 70.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "00:00"
+  },
+  "PHP": {
+   "name": "PHP",
+   "load_mw": 9.0,
+   "load_time": "18:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 123.0,
+   "max_voltage_time": "20:00",
+   "min_voltage_kv": 117.0,
+   "min_voltage_time": "00:00"
+  },
+  "Panchagarh": {
+   "name": "Panchagarh",
+   "load_mw": 59.0,
+   "load_time": "20:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 139.0,
+   "max_voltage_time": "21:00",
+   "min_voltage_kv": 122.0,
+   "min_voltage_time": "12:00"
+  },
+  "Zigatola": {
+   "name": "Zigatola",
+   "load_mw": 74.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "11:00"
+  },
+  "Maniknagar": {
+   "name": "Maniknagar",
+   "load_mw": 88.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "10:00"
+  },
+  "Joydebpur": {
+   "name": "Joydebpur",
+   "load_mw": 151.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "19:00",
+   "min_voltage_kv": 123.0,
+   "min_voltage_time": "08:00"
+  },
+  "Lalmonirhat": {
+   "name": "Lalmonirhat",
+   "load_mw": 67.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 122.0,
+   "min_voltage_time": "11:00"
+  },
+  "Fenchuganj": {
+   "name": "Fenchuganj",
+   "load_mw": 39.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Mahasthangarh": {
+   "name": "Mahasthangarh",
+   "load_mw": 90.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shikalbaha-230": {
+   "name": "Shikalbaha-230",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Satmasjid": {
+   "name": "Satmasjid",
+   "load_mw": 105.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "12:00"
+  },
+  "Sreemongol": {
+   "name": "Sreemongol",
+   "load_mw": 81.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Narshingdi": {
+   "name": "Narshingdi",
+   "load_mw": 186.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 118.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kodda": {
+   "name": "Kodda",
+   "load_mw": 302.0,
+   "load_time": "09:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 123.0,
+   "min_voltage_time": "00:00"
+  },
+  "Mithapukur": {
+   "name": "Mithapukur",
+   "load_mw": 66.0,
+   "load_time": "02:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 112.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rahanpur-400": {
+   "name": "Rahanpur-400",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 139.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 132.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kachua": {
+   "name": "Kachua",
+   "load_mw": 90.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 125.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 119.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shyampur-230": {
+   "name": "Shyampur-230",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bibiana": {
+   "name": "Bibiana",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 227.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 220.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shahjibazar": {
+   "name": "Shahjibazar",
+   "load_mw": 118.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "14:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Nawabganj": {
+   "name": "Nawabganj",
+   "load_mw": 61.2,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "04:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "11:00"
+  },
+  "Keranigonj": {
+   "name": "Keranigonj",
+   "load_mw": 91.0,
+   "load_time": "00:00",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 222.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 214.0,
+   "min_voltage_time": "00:00"
+  },
+  "Uttara": {
+   "name": "Uttara",
+   "load_mw": 91.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "21:00"
+  },
+  "Mirzapur": {
+   "name": "Mirzapur",
+   "load_mw": 46.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kaliakoir": {
+   "name": "Kaliakoir",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "11:00"
+  },
+  "Netrakona": {
+   "name": "Netrakona",
+   "load_mw": 127.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 127.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 119.0,
+   "min_voltage_time": "21:00"
+  },
+  "Kishoreganj": {
+   "name": "Kishoreganj",
+   "load_mw": 136.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "14:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Matarbari": {
+   "name": "Matarbari",
+   "load_mw": 52.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 118.0,
+   "max_voltage_time": "11:00",
+   "min_voltage_kv": 109.0,
+   "min_voltage_time": "21:00"
+  },
+  "Rampur": {
+   "name": "Rampur",
+   "load_mw": 40.0,
+   "load_time": "23:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Pabna": {
+   "name": "Pabna",
+   "load_mw": 131.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "21:00"
+  },
+  "Coxsbazar": {
+   "name": "Coxsbazar",
+   "load_mw": 134.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 118.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 110.0,
+   "min_voltage_time": "23:00"
+  },
+  "Barishal": {
+   "name": "Barishal",
+   "load_mw": 114.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "23:00"
+  },
+  "Dhanmondi": {
+   "name": "Dhanmondi",
+   "load_mw": 153.6,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "11:00"
+  },
+  "BIPTC": {
+   "name": "BIPTC",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 237.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 223.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rahanpur": {
+   "name": "Rahanpur",
+   "load_mw": 40.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 130.0,
+   "min_voltage_time": "05:00"
+  },
+  "Madanganj": {
+   "name": "Madanganj",
+   "load_mw": 41.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "00:00"
+  },
+  "Millgate": {
+   "name": "Millgate",
+   "load_mw": 129.0,
+   "load_time": "10:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "12:00"
+  },
+  "Kazla": {
+   "name": "Kazla",
+   "load_mw": 88.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "12:00"
+  },
+  "SevenRings": {
+   "name": "SevenRings",
+   "load_mw": 6.56,
+   "load_time": "18:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 131.0,
+   "min_voltage_time": "00:00"
+  },
+  "Jashore": {
+   "name": "Jashore",
+   "load_mw": 142.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "10:00",
+   "min_voltage_kv": 123.0,
+   "min_voltage_time": "23:00"
+  },
+  "Jhenaidah-230": {
+   "name": "Jhenaidah-230",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Cantonment": {
+   "name": "Cantonment",
+   "load_mw": 146.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "04:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "10:00"
+  },
+  "Sherpur": {
+   "name": "Sherpur",
+   "load_mw": 138.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 139.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 131.0,
+   "min_voltage_time": "12:00"
+  },
+  "Fatullah": {
+   "name": "Fatullah",
+   "load_mw": 94.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "10:00"
+  },
+  "Siddhirganj": {
+   "name": "Siddhirganj",
+   "load_mw": 120.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "11:00"
+  },
+  "Munshiganj": {
+   "name": "Munshiganj",
+   "load_mw": 115.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 123.0,
+   "min_voltage_time": "09:00"
+  },
+  "Mongla": {
+   "name": "Mongla",
+   "load_mw": 34.0,
+   "load_time": "01:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bakulia": {
+   "name": "Bakulia",
+   "load_mw": 95.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "GPH": {
+   "name": "GPH",
+   "load_mw": 89.0,
+   "load_time": "18:00",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 227.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 222.0,
+   "min_voltage_time": "00:00"
+  },
+  "Banani": {
+   "name": "Banani",
+   "load_mw": 96.2,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "02:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "11:00"
+  },
+  "Chandraghona": {
+   "name": "Chandraghona",
+   "load_mw": 38.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 129.0,
+   "min_voltage_time": "00:00"
+  },
+  "Mogbazar": {
+   "name": "Mogbazar",
+   "load_mw": 164.6,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 140.0,
+   "max_voltage_time": "02:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "11:00"
+  },
+  "Naogaon": {
+   "name": "Naogaon",
+   "load_mw": 127.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 122.0,
+   "min_voltage_time": "00:00"
+  },
+  "Gopalganj-400": {
+   "name": "Gopalganj-400",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 131.0,
+   "min_voltage_time": "00:00"
+  },
+  "Gopalganj": {
+   "name": "Gopalganj",
+   "load_mw": 114.4,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Jhenaidah": {
+   "name": "Jhenaidah",
+   "load_mw": 132.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 122.0,
+   "min_voltage_time": "22:00"
+  },
+  "ShahCement": {
+   "name": "ShahCement",
+   "load_mw": 4.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "00:00"
+  },
+  "Mymensingh": {
+   "name": "Mymensingh",
+   "load_mw": 188.0,
+   "load_time": "20:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "00:00"
+  },
+  "Sylhet-132": {
+   "name": "Sylhet-132",
+   "load_mw": 116.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 135.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shahmirpur": {
+   "name": "Shahmirpur",
+   "load_mw": 61.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bheramara": {
+   "name": "Bheramara",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 132.0,
+   "min_voltage_time": "00:00"
+  },
+  "Chandina": {
+   "name": "Chandina",
+   "load_mw": 35.05,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 127.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 122.0,
+   "min_voltage_time": "01:00"
+  },
+  "Ramganj": {
+   "name": "Ramganj",
+   "load_mw": 116.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 121.0,
+   "max_voltage_time": "11:00",
+   "min_voltage_kv": 113.0,
+   "min_voltage_time": "01:00"
+  },
+  "Dohazari": {
+   "name": "Dohazari",
+   "load_mw": 109.0,
+   "load_time": "20:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 126.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 119.0,
+   "min_voltage_time": "00:00"
+  },
+  "BashundharaCement": {
+   "name": "BashundharaCement",
+   "load_mw": 14.0,
+   "load_time": "10:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "00:00"
+  },
+  "Bhulta": {
+   "name": "Bhulta",
+   "load_mw": 267.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 123.0,
+   "max_voltage_time": "19:00",
+   "min_voltage_kv": 118.0,
+   "min_voltage_time": "10:00"
+  },
+  "Kurigram": {
+   "name": "Kurigram",
+   "load_mw": 68.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "13:00",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "12:00"
+  },
+  "Amnura": {
+   "name": "Amnura",
+   "load_mw": 27.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Ghorashal": {
+   "name": "Ghorashal",
+   "load_mw": 13.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 130.0,
+   "min_voltage_time": "01:00"
+  },
+  "Dhaka": {
+   "name": "Dhaka",
+   "load_mw": 82.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 140.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "12:00"
+  },
+  "Barapukuria-230": {
+   "name": "Barapukuria-230",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 226.0,
+   "max_voltage_time": "13:00",
+   "min_voltage_kv": 216.0,
+   "min_voltage_time": "23:00"
+  },
+  "Sholosohor": {
+   "name": "Sholosohor",
+   "load_mw": 44.0,
+   "load_time": "15:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "19:30",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Meghnaghat": {
+   "name": "Meghnaghat",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 225.0,
+   "max_voltage_time": "02:00",
+   "min_voltage_kv": 220.0,
+   "min_voltage_time": "22:00"
+  },
+  "Bagerhat": {
+   "name": "Bagerhat",
+   "load_mw": 86.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "00:00"
+  },
+  "Sreepur": {
+   "name": "Sreepur",
+   "load_mw": 107.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 129.0,
+   "min_voltage_time": "00:00"
+  },
+  "Hathazari": {
+   "name": "Hathazari",
+   "load_mw": 81.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "02:00",
+   "min_voltage_kv": 129.0,
+   "min_voltage_time": "12:00"
+  },
+  "AKS": {
+   "name": "AKS",
+   "load_mw": 13.0,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 127.0,
+   "max_voltage_time": "19:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "UttaraNew": {
+   "name": "UttaraNew",
+   "load_mw": 61.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "05:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Noapara": {
+   "name": "Noapara",
+   "load_mw": 45.0,
+   "load_time": "21:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Sirajgonj": {
+   "name": "Sirajgonj",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 241.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 234.0,
+   "min_voltage_time": "00:00"
+  },
+  "Madunaghat": {
+   "name": "Madunaghat",
+   "load_mw": 60.0,
+   "load_time": "20:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 130.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rahim": {
+   "name": "Rahim",
+   "load_mw": 26.0,
+   "load_time": "05:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 128.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "10:00"
+  },
+  "Shariatpur": {
+   "name": "Shariatpur",
+   "load_mw": 93.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shahjadpur": {
+   "name": "Shahjadpur",
+   "load_mw": 79.0,
+   "load_time": "20:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 139.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 132.0,
+   "min_voltage_time": "00:00"
+  },
+  "Laksam": {
+   "name": "Laksam",
+   "load_mw": 32.0,
+   "load_time": "01:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 124.0,
+   "max_voltage_time": "15:00",
+   "min_voltage_kv": 118.0,
+   "min_voltage_time": "00:00"
+  },
+  "Goalpara": {
+   "name": "Goalpara",
+   "load_mw": 36.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Thakurgaon": {
+   "name": "Thakurgaon",
+   "load_mw": 105.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "21:00",
+   "min_voltage_kv": 119.0,
+   "min_voltage_time": "12:00"
+  },
+  "Ullon": {
+   "name": "Ullon",
+   "load_mw": 42.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "12:00"
+  },
+  "Faridpur": {
+   "name": "Faridpur",
+   "load_mw": 172.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 128.0,
+   "min_voltage_time": "00:00"
+  },
+  "Aminbazar": {
+   "name": "Aminbazar",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "04:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "01:00"
+  },
+  "Ghatail": {
+   "name": "Ghatail",
+   "load_mw": 80.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "13:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Shitalakhya": {
+   "name": "Shitalakhya",
+   "load_mw": 84.8,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 129.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 124.0,
+   "min_voltage_time": "10:00"
+  },
+  "Lakshmipur": {
+   "name": "Lakshmipur",
+   "load_mw": 25.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 120.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 112.0,
+   "min_voltage_time": "01:00"
+  },
+  "Hasnabad": {
+   "name": "Hasnabad",
+   "load_mw": 78.0,
+   "load_time": "23:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "11:00"
+  },
+  "Khulna": {
+   "name": "Khulna",
+   "load_mw": 68.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Magura": {
+   "name": "Magura",
+   "load_mw": 69.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rangpur": {
+   "name": "Rangpur",
+   "load_mw": 145.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "13:00",
+   "min_voltage_kv": 123.0,
+   "min_voltage_time": "12:00"
+  },
+  "Daudkandi": {
+   "name": "Daudkandi",
+   "load_mw": 151.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 123.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 117.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rajshahi-230": {
+   "name": "Rajshahi-230",
+   "load_mw": 100.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rajbari": {
+   "name": "Rajbari",
+   "load_mw": 85.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "00:00"
+  },
+  "New": {
+   "name": "New",
+   "load_mw": 63.9,
+   "load_time": "12:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "06:00",
+   "min_voltage_kv": 127.0,
+   "min_voltage_time": "00:00"
+  },
+  "Taraganj": {
+   "name": "Taraganj",
+   "load_mw": 23.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 120.0,
+   "min_voltage_time": "01:00"
+  },
+  "Palashbari": {
+   "name": "Palashbari",
+   "load_mw": 98.0,
+   "load_time": "01:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 131.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 114.0,
+   "min_voltage_time": "00:00"
+  },
+  "Purbasadipur": {
+   "name": "Purbasadipur",
+   "load_mw": 131.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "18:30",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "00:00"
+  },
+  "Muktagacha": {
+   "name": "Muktagacha",
+   "load_mw": 34.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 136.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 132.0,
+   "min_voltage_time": "00:00"
+  },
+  "Kasba": {
+   "name": "Kasba",
+   "load_mw": 34.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 124.0,
+   "max_voltage_time": "18:00",
+   "min_voltage_kv": 118.0,
+   "min_voltage_time": "00:00"
+  },
+  "Lalbag": {
+   "name": "Lalbag",
+   "load_mw": 57.0,
+   "load_time": "13:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "11:00"
+  },
+  "Bogura": {
+   "name": "Bogura",
+   "load_mw": 161.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 140.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 130.0,
+   "min_voltage_time": "00:00"
+  },
+  "Barishal-230": {
+   "name": "Barishal-230",
+   "load_mw": 106.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "23:00"
+  },
+  "Purbachal": {
+   "name": "Purbachal",
+   "load_mw": 21.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "02:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "11:00"
+  },
+  "Patuakhali": {
+   "name": "Patuakhali",
+   "load_mw": 73.0,
+   "load_time": "22:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 134.0,
+   "max_voltage_time": "07:00",
+   "min_voltage_kv": 130.0,
+   "min_voltage_time": "00:00"
+  },
+  "Saidpur": {
+   "name": "Saidpur",
+   "load_mw": 107.0,
+   "load_time": "19:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 132.0,
+   "max_voltage_time": "13:00",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "00:00"
+  },
+  "Narail": {
+   "name": "Narail",
+   "load_mw": 63.0,
+   "load_time": "19:30",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "09:00",
+   "min_voltage_kv": 125.0,
+   "min_voltage_time": "00:00"
+  },
+  "Rampura": {
+   "name": "Rampura",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 138.0,
+   "max_voltage_time": "03:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "11:00"
+  },
+  "Madunaghat-400": {
+   "name": "Madunaghat-400",
+   "voltage_level": "230 kV",
+   "max_voltage_kv": 231.0,
+   "max_voltage_time": "08:00",
+   "min_voltage_kv": 226.0,
+   "min_voltage_time": "00:00"
+  },
+  "Madartek": {
+   "name": "Madartek",
+   "load_mw": 94.0,
+   "load_time": "00:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 137.0,
+   "max_voltage_time": "02:00",
+   "min_voltage_kv": 126.0,
+   "min_voltage_time": "12:00"
+  },
+  "Sylhet": {
+   "name": "Sylhet",
+   "load_mw": 46.0,
+   "load_time": "14:00",
+   "voltage_level": "132 kV",
+   "max_voltage_kv": 133.0,
+   "max_voltage_time": "16:00",
+   "min_voltage_kv": 121.0,
+   "min_voltage_time": "01:00"
+  }
+ }
+}
