@@ -401,15 +401,8 @@ def build_plants(official, genlog_cols, p2):
 
 
 def parse_one(path: Path) -> str:
-    """Parse a single .xlsx report and write its dated JSON files.
-    Returns the data date string (YYYY-MM-DD) written.
-
-    Writes THREE files instead of one, split by what each page actually
-    needs, so a page never downloads data it doesn't use:
-      data/summary/{date}.json      - Today + Areas pages
-      data/plants/{date}.json       - Plants page only
-      data/substations/{date}.json  - Substations page only
-    """
+    """Parse a single .xlsx report and write its dated JSON file.
+    Returns the data date string (YYYY-MM-DD) written."""
     wb = openpyxl.load_workbook(path, data_only=True)
 
     m = re.search(r"(\d{2})-(\d{2})-(\d{4})", path.stem)
@@ -436,7 +429,7 @@ def parse_one(path: Path) -> str:
         entry.update({k: v for k, v in voltage.get(name, {}).items() if k != "name"})
         substations[name] = entry
 
-    summary_doc = {
+    result = {
         "date": date_str,
         "source_file": path.name,
         "summary": parse_p1(wb["P1"]),
@@ -444,20 +437,19 @@ def parse_one(path: Path) -> str:
         "divisions": parse_p3_divisions(wb["P3"]),
         "zone_fuel_summary_mkwhr": parse_zone_fuel_summary(wb["P1"]),
         "fuel_mix": parse_en_curve(wb["En-Curve"]),
+        "plants": plants,
+        "substations": substations,
     }
-    plants_doc = {"date": date_str, "plants": plants}
-    substations_doc = {"date": date_str, "substations": substations}
 
-    data_dir = Path(__file__).resolve().parent.parent / "data"
-    for sub, doc in (("summary", summary_doc), ("plants", plants_doc), ("substations", substations_doc)):
-        out_dir = data_dir / sub
-        out_dir.mkdir(parents=True, exist_ok=True)
-        with open(out_dir / f"{date_str}.json", "w") as f:
-            json.dump(doc, f, indent=1)
+    out_dir = Path(__file__).resolve().parent.parent / "data"
+    out_dir.mkdir(exist_ok=True)
+    out_path = out_dir / f"{date_str}.json"
+    with open(out_path, "w") as f:
+        json.dump(result, f, indent=1)
 
     running = sum(1 for p in plants.values() if p["status"] == "running")
     sl_numbers = sorted((int(float(p["sl"])) for p in plants.values() if p["sl"].replace(".", "", 1).isdigit()))
-    print(f"Wrote data/{{summary,plants,substations}}/{date_str}.json")
+    print(f"Wrote {out_path}")
     print(f"  {len(plants)} officially Sl.-numbered plants ({running} running, {len(plants) - running} offline)")
     if sl_numbers:
         gaps = sorted(set(range(sl_numbers[0], sl_numbers[-1] + 1)) - set(sl_numbers))
