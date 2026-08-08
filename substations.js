@@ -10,7 +10,7 @@ async function loadIndex() {
 }
 
 async function loadDate(dateStr) {
-  const res = await fetch(`data/substations/${dateStr}.json`);
+  const res = await fetch(`data/${dateStr}.json`);
   return res.json();
 }
 
