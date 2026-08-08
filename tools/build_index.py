@@ -15,10 +15,12 @@ from pathlib import Path
 
 def main():
     data_dir = Path(__file__).resolve().parent.parent / "data"
+    summary_dir = data_dir / "summary"
     dates = []
-    for f in data_dir.glob("*.json"):
-        if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", f.name):
-            dates.append(f.stem)
+    if summary_dir.exists():
+        for f in summary_dir.glob("*.json"):
+            if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", f.name):
+                dates.append(f.stem)
 
     dates.sort()
 
