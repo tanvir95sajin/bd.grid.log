@@ -22,12 +22,14 @@ let currentData = null;
 
 async function loadIndex() {
   const res = await fetch('data/index.json');
+  if (!res.ok) throw new Error(`data/index.json failed to load (HTTP ${res.status})`);
   const idx = await res.json();
   return idx.dates || [];
 }
 
 async function loadDate(dateStr) {
-  const res = await fetch(`data/${dateStr}.json`);
+  const res = await fetch(`data/summary/${dateStr}.json`);
+  if (!res.ok) throw new Error(`data/summary/${dateStr}.json failed to load (HTTP ${res.status})`);
   return res.json();
 }
 
@@ -173,132 +175,6 @@ function renderDivisions(d) {
     </div>
   `).join('');
 }
-
-/* ---------- Zone map ---------- */
-
-const ZONE_COORDS = {
-  Dhaka: [90.4125, 23.8103],
-  Chattogram: [91.7832, 22.3569],
-  Cumilla: [91.1809, 23.4607],
-  Mymensingh: [90.4203, 24.7471],
-  Sylhet: [91.8687, 24.8949],
-  Khulna: [89.5403, 22.8456],
-  Barishal: [90.3535, 22.7010],
-  Rajshahi: [88.6042, 24.3745],
-  Rangpur: [89.2752, 25.7439],
-};
-// [lon, lat] - approximate coordinates for each zone's namesake city, used
-// only to lay zones out in roughly correct relative positions - not a
-// claim about exact plant or substation locations, which this report
-// doesn't provide.
-
-// Bangladesh ADM0 boundary, geoBoundaries (CC BY 4.0 / CC0), official download
-// URL from the geoBoundaries API (geoboundaries.org/api/current/gbOpen/BGD/ADM0/).
-const BD_BOUNDARY_URL = 'https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BGD/ADM0/geoBoundaries-BGD-ADM0_simplified.geojson';
-
-const MAP_W = 420, MAP_H = 520;
-let mapProjection = null;
-let mapPathGen = null;
-let selectedZone = null;
-let boundaryGeo = null;
-
-function fallbackProjection() {
-  // Used only if the boundary fetch fails - simple linear lat/lon fit so
-  // the map still works, just without the real coastline.
-  const LAT_MIN = 20.5, LAT_MAX = 26.8, LON_MIN = 87.8, LON_MAX = 92.8;
-  return (lonlat) => [
-    ((lonlat[0] - LON_MIN) / (LON_MAX - LON_MIN)) * MAP_W,
-    MAP_H - ((lonlat[1] - LAT_MIN) / (LAT_MAX - LAT_MIN)) * MAP_H,
-  ];
-}
-
-async function loadBoundary() {
-  try {
-    const res = await fetch(BD_BOUNDARY_URL);
-    if (!res.ok) throw new Error('fetch failed');
-    boundaryGeo = await res.json();
-    mapProjection = d3.geoMercator().fitSize([MAP_W, MAP_H], boundaryGeo);
-    mapPathGen = d3.geoPath(mapProjection);
-  } catch (e) {
-    boundaryGeo = null;
-    mapProjection = fallbackProjection();
-    mapPathGen = null;
-  }
-}
-
-function renderMap(d) {
-  const zones = d.divisions;
-  const maxLoad = Math.max(...zones.map(z => z.evening_peak_load_mw));
-  const minR = 10, maxR = 38;
-
-  const project = mapProjection || fallbackProjection();
-  const countryPath = mapPathGen && boundaryGeo
-    ? `<path d="${mapPathGen(boundaryGeo)}" fill="#dbe2d4" stroke="#8fa092" stroke-width="1"></path>`
-    : '';
-
-  const bubbles = zones.map(z => {
-    const coords = ZONE_COORDS[z.division];
-    if (!coords) return '';
-    const [x, y] = project(coords);
-    const scale = Math.sqrt(z.evening_peak_load_mw) / Math.sqrt(maxLoad);
-    const r = minR + scale * (maxR - minR);
-    const opacity = (0.45 + 0.55 * scale).toFixed(2);
-    const isSelected = z.division === selectedZone;
-    return `
-      <g class="zone-bubble${isSelected ? ' selected' : ''}" data-zone="${z.division}" transform="translate(${x},${y})">
-        <circle r="${r}" fill="#e08a1e" fill-opacity="${opacity}" stroke="#8a5410" stroke-width="${isSelected ? 2 : 0.75}"></circle>
-        <text class="zone-label" text-anchor="middle" y="${r + 13}">${z.division}</text>
-        <text class="zone-value" text-anchor="middle" y="${r + 25}">${fmt(z.evening_peak_load_mw)} MW</text>
-      </g>`;
-  }).join('');
-
-  const svg = `
-    <svg viewBox="0 0 ${MAP_W} ${MAP_H}" role="img" aria-label="Map of Bangladesh with bubbles over its nine grid zones, sized by evening peak load">
-      ${countryPath}
-      ${bubbles}
-    </svg>`;
-
-  const container = document.getElementById('zone-map');
-  container.innerHTML = svg;
-
-  container.querySelectorAll('.zone-bubble').forEach(el => {
-    el.addEventListener('click', () => {
-      selectedZone = el.dataset.zone;
-      renderMap(d);
-      renderMapDetail(d, selectedZone);
-    });
-  });
-}
-
-function renderMapDetail(d, zoneName) {
-  const zone = d.divisions.find(z => z.division === zoneName);
-  const fuel = d.zone_fuel_summary_mkwhr[zoneName] || {};
-  const topFuels = Object.entries(fuel)
-    .filter(([, v]) => v > 0)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 3);
-
-  document.getElementById('map-detail').innerHTML = `
-    <p class="plant-detail-name">${zoneName}</p>
-    <p class="plant-detail-stats" style="margin-bottom: 12px;">Evening peak load <b>${fmt(zone.evening_peak_load_mw)} MW</b></p>
-    <p style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--amber); margin: 0 0 8px;">Leading fuels</p>
-    ${topFuels.map(([f, v]) => `
-      <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:12px; padding:4px 0; border-bottom:1px solid var(--hairline); color:var(--text-dim);">
-        <span>${f}</span><span>${fmt(v, 1)} M kWh</span>
-      </div>`).join('')}
-    <a href="areas.html" style="display:inline-block; margin-top:14px; font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:var(--amber); text-decoration:none;">Full breakdown &rarr;</a>
-  `;
-}
-
-async function initMap(d) {
-  selectedZone = d.divisions.length ? d.divisions[0].division : null;
-  if (!mapProjection && !mapPathGen) {
-    await loadBoundary();
-  }
-  renderMap(d);
-  if (selectedZone) renderMapDetail(d, selectedZone);
-}
-
 function renderAll(d) {
   currentData = d;
   renderMeters(d);
@@ -307,32 +183,41 @@ function renderAll(d) {
   renderFuelChart(d);
   renderCo2Table(d);
   renderDivisions(d);
-  initMap(d);
 }
 
 async function init() {
-  const dates = await loadIndex();
-  const select = document.getElementById('date-select');
+  try {
+    const dates = await loadIndex();
+    const select = document.getElementById('date-select');
 
-  if (dates.length === 0) {
-    document.getElementById('loading').textContent = 'No data yet. Add a dated JSON file to /data and rebuild the index.';
-    return;
-  }
+    if (dates.length === 0) {
+      document.getElementById('loading').textContent = 'No data yet. Add a dated JSON file to /data and rebuild the index.';
+      return;
+    }
 
-  select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
+    select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
 
-  select.addEventListener('change', async () => {
-    const d = await loadDate(select.value);
+    select.addEventListener('change', async () => {
+      try {
+        const d = await loadDate(select.value);
+        renderAll(d);
+      } catch (e) {
+        alert(`Couldn't load ${select.value}: ${e.message}`);
+      }
+    });
+
+    const latest = dates[dates.length - 1];
+    select.value = latest;
+    const d = await loadDate(latest);
+
+    document.getElementById('loading').hidden = true;
+    document.getElementById('content').hidden = false;
     renderAll(d);
-  });
-
-  const latest = dates[dates.length - 1];
-  select.value = latest;
-  const d = await loadDate(latest);
-
-  document.getElementById('loading').hidden = true;
-  document.getElementById('content').hidden = false;
-  renderAll(d);
+  } catch (e) {
+    const loading = document.getElementById('loading');
+    loading.textContent = `Couldn't load the grid data: ${e.message}. Check that data/index.json and the dated files it lists actually exist at those paths in your repo.`;
+    console.error(e);
+  }
 }
 
 init();

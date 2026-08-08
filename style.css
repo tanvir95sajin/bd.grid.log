@@ -521,48 +521,6 @@ table.data-table td.cause { color: var(--coral); white-space: normal; max-width:
 .area-fuel-fill { height: 100%; border-radius: 3px; }
 .area-fuel-val { text-align: right; color: var(--text); }
 
-/* ---------- Zone map ---------- */
-
-.map-layout {
-  display: grid;
-  grid-template-columns: 1fr 260px;
-  gap: 20px;
-  align-items: start;
-}
-
-@media (max-width: 700px) {
-  .map-layout { grid-template-columns: 1fr; }
-}
-
-.zone-map {
-  width: 100%;
-  background: #eef2ed;
-  border-radius: 4px;
-  padding: 12px;
-}
-.zone-map svg { width: 100%; height: auto; display: block; }
-
-.zone-bubble { cursor: pointer; }
-.zone-bubble circle { transition: opacity 0.15s; }
-.zone-bubble:hover circle { opacity: 0.85; }
-.zone-bubble text { font-family: var(--font-mono); pointer-events: none; }
-.zone-bubble .zone-label { font-size: 11px; font-weight: 500; fill: #12160f; }
-.zone-bubble .zone-value { font-size: 9px; fill: #3a3f36; }
-.zone-bubble.selected circle { stroke: #7a4a0e; stroke-width: 2; }
-
-.map-detail {
-  border: 1px solid var(--hairline);
-  border-radius: 4px;
-  padding: 14px;
-}
-
-.map-footnote {
-  font-size: 12px;
-  color: var(--text-faint);
-  margin: 16px 0 0;
-  line-height: 1.6;
-}
-
 /* ---------- Footer ---------- */
 
 .site-footer {

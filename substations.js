@@ -6,11 +6,13 @@ let currentSearch = '';
 
 async function loadIndex() {
   const res = await fetch('data/index.json');
+  if (!res.ok) throw new Error(`data/index.json failed to load (HTTP ${res.status})`);
   return (await res.json()).dates || [];
 }
 
 async function loadDate(dateStr) {
-  const res = await fetch(`data/${dateStr}.json`);
+  const res = await fetch(`data/substations/${dateStr}.json`);
+  if (!res.ok) throw new Error(`data/substations/${dateStr}.json failed to load (HTTP ${res.status})`);
   return res.json();
 }
 
@@ -67,41 +69,51 @@ function showDetail(name) {
 }
 
 async function init() {
-  const dates = await loadIndex();
-  const select = document.getElementById('date-select');
+  try {
+    const dates = await loadIndex();
+    const select = document.getElementById('date-select');
 
-  if (dates.length === 0) {
-    document.getElementById('loading').textContent = 'No data yet.';
-    return;
-  }
+    if (dates.length === 0) {
+      document.getElementById('loading').textContent = 'No data yet.';
+      return;
+    }
 
-  select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
-  select.value = dates[dates.length - 1];
+    select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
+    select.value = dates[dates.length - 1];
 
-  select.addEventListener('change', async () => {
+    select.addEventListener('change', async () => {
+      try {
+        currentData = await loadDate(select.value);
+        renderList();
+        document.getElementById('sub-detail').innerHTML = '<p class="plant-detail-empty">Select a substation for its load and voltage readings.</p>';
+      } catch (e) {
+        alert(`Couldn't load ${select.value}: ${e.message}`);
+      }
+    });
+
     currentData = await loadDate(select.value);
+    document.getElementById('loading').hidden = true;
+    document.getElementById('content').hidden = false;
     renderList();
-    document.getElementById('sub-detail').innerHTML = '<p class="plant-detail-empty">Select a substation for its load and voltage readings.</p>';
-  });
 
-  currentData = await loadDate(select.value);
-  document.getElementById('loading').hidden = true;
-  document.getElementById('content').hidden = false;
-  renderList();
-
-  document.getElementById('sub-search').addEventListener('input', (e) => {
-    currentSearch = e.target.value;
-    renderList();
-  });
-
-  document.querySelectorAll('#voltage-filter .filter-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('#voltage-filter .filter-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      currentLevel = chip.dataset.level;
+    document.getElementById('sub-search').addEventListener('input', (e) => {
+      currentSearch = e.target.value;
       renderList();
     });
-  });
+
+    document.querySelectorAll('#voltage-filter .filter-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('#voltage-filter .filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        currentLevel = chip.dataset.level;
+        renderList();
+      });
+    });
+  } catch (e) {
+    const loading = document.getElementById('loading');
+    loading.textContent = `Couldn't load the grid data: ${e.message}. Check that data/index.json and the dated files it lists actually exist at those paths in your repo.`;
+    console.error(e);
+  }
 }
 
 init();

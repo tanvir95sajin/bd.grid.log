@@ -7,16 +7,21 @@ No server, no database, no build step. It's plain HTML/CSS/JS reading JSON files
 ## How it's organized
 
 ```
-index.html          the page
-style.css            styling
-app.js                all the front-end logic (loads JSON, draws charts)
+index.html, plants.html, areas.html, substations.html   the four pages
+style.css                                                 styling
+app.js, plants.js, areas.js, substations.js               per-page logic (loads JSON, draws charts)
 data/
-  index.json          list of dates the site knows about
-  2026-06-09.json      one file per day
+  index.json               list of dates the site knows about
+  summary/2026-06-09.json      Today + Areas pages read this - small, ~20 KB/day
+  plants/2026-06-09.json       Plants page only - the big one, ~200 KB/day
+  substations/2026-06-09.json  Substations page only - ~50 KB/day
 tools/
-  parse_report.py      turns a PGCB .xlsx into one of the dated JSON files
-  build_index.py        regenerates data/index.json after adding new dates
+  parse_report.py      turns a PGCB .xlsx into that date's three JSON files
+  parse_all.py           runs parse_report.py over a whole folder of .xlsx files
+  build_index.py          regenerates data/index.json after adding new dates
 ```
+
+Each day's data is split into three files by what actually uses it, instead of one big file every page has to download regardless of what it needs. The Today page, for instance, never touches plant or substation detail, so it now only loads the ~20 KB summary file instead of the full ~270 KB. This is the reason the site can feel slow to load right after adding a lot of dates if you're on an older single-file version — see "Why the site feels slow" below.
 
 ## Adding a new day
 
@@ -84,6 +89,12 @@ python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000` in a browser.
+
+## Why the site feels slow
+
+If you're on the old version (one JSON file per day holding everything), every page — including Today, which doesn't need plant or substation detail at all — was downloading the full file, roughly 190-270 KB per day depending on how many plants were running. That's fine for one day, but it adds up as a one-time cost on every visit, not because of *how many dates exist* — the site only ever loads the single selected date, never all of them at once.
+
+The current version splits each day into three files (see "How it's organized" above), so Today only pulls the ~20 KB it actually uses. If you're still seeing slowness after re-running the parser with the current `parse_report.py`, the most likely remaining cause is the map's one-time fetch of the Bangladesh boundary shape from GitHub on the Today page — that's an external request outside your control, and it already fails gracefully (the map still renders, just without the coastline) if it's ever slow or unavailable.
 
 ## Placeholders to edit
 

@@ -10,11 +10,13 @@ let currentZone = null;
 
 async function loadIndex() {
   const res = await fetch('data/index.json');
+  if (!res.ok) throw new Error(`data/index.json failed to load (HTTP ${res.status})`);
   return (await res.json()).dates || [];
 }
 
 async function loadDate(dateStr) {
-  const res = await fetch(`data/${dateStr}.json`);
+  const res = await fetch(`data/summary/${dateStr}.json`);
+  if (!res.ok) throw new Error(`data/summary/${dateStr}.json failed to load (HTTP ${res.status})`);
   return res.json();
 }
 
@@ -78,33 +80,43 @@ function renderAllDivisions() {
 }
 
 async function init() {
-  const dates = await loadIndex();
-  const select = document.getElementById('date-select');
+  try {
+    const dates = await loadIndex();
+    const select = document.getElementById('date-select');
 
-  if (dates.length === 0) {
-    document.getElementById('loading').textContent = 'No data yet.';
-    return;
-  }
+    if (dates.length === 0) {
+      document.getElementById('loading').textContent = 'No data yet.';
+      return;
+    }
 
-  select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
-  select.value = dates[dates.length - 1];
+    select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
+    select.value = dates[dates.length - 1];
 
-  select.addEventListener('change', async () => {
+    select.addEventListener('change', async () => {
+      try {
+        currentData = await loadDate(select.value);
+        renderTabs();
+        renderZone();
+        renderAllDivisions();
+      } catch (e) {
+        alert(`Couldn't load ${select.value}: ${e.message}`);
+      }
+    });
+
     currentData = await loadDate(select.value);
+    currentZone = d3Zone(currentData);
+
+    document.getElementById('loading').hidden = true;
+    document.getElementById('content').hidden = false;
+
     renderTabs();
     renderZone();
     renderAllDivisions();
-  });
-
-  currentData = await loadDate(select.value);
-  currentZone = d3Zone(currentData);
-
-  document.getElementById('loading').hidden = true;
-  document.getElementById('content').hidden = false;
-
-  renderTabs();
-  renderZone();
-  renderAllDivisions();
+  } catch (e) {
+    const loading = document.getElementById('loading');
+    loading.textContent = `Couldn't load the grid data: ${e.message}. Check that data/index.json and the dated files it lists actually exist at those paths in your repo.`;
+    console.error(e);
+  }
 }
 
 function d3Zone(d) {

@@ -9,11 +9,13 @@ let currentSearch = '';
 
 async function loadIndex() {
   const res = await fetch('data/index.json');
+  if (!res.ok) throw new Error(`data/index.json failed to load (HTTP ${res.status})`);
   return (await res.json()).dates || [];
 }
 
 async function loadDate(dateStr) {
-  const res = await fetch(`data/${dateStr}.json`);
+  const res = await fetch(`data/plants/${dateStr}.json`);
+  if (!res.ok) throw new Error(`data/plants/${dateStr}.json failed to load (HTTP ${res.status})`);
   return res.json();
 }
 
@@ -105,41 +107,51 @@ function showPlantDetail(name) {
 }
 
 async function init() {
-  const dates = await loadIndex();
-  const select = document.getElementById('date-select');
+  try {
+    const dates = await loadIndex();
+    const select = document.getElementById('date-select');
 
-  if (dates.length === 0) {
-    document.getElementById('loading').textContent = 'No data yet.';
-    return;
-  }
+    if (dates.length === 0) {
+      document.getElementById('loading').textContent = 'No data yet.';
+      return;
+    }
 
-  select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
-  select.value = dates[dates.length - 1];
+    select.innerHTML = dates.slice().reverse().map(dt => `<option value="${dt}">${dt}</option>`).join('');
+    select.value = dates[dates.length - 1];
 
-  select.addEventListener('change', async () => {
+    select.addEventListener('change', async () => {
+      try {
+        currentData = await loadDate(select.value);
+        renderPlantList();
+        document.getElementById('plant-detail').innerHTML = '<p class="plant-detail-empty">Select a plant for its output, capacity, and status.</p>';
+      } catch (e) {
+        alert(`Couldn't load ${select.value}: ${e.message}`);
+      }
+    });
+
     currentData = await loadDate(select.value);
+    document.getElementById('loading').hidden = true;
+    document.getElementById('content').hidden = false;
     renderPlantList();
-    document.getElementById('plant-detail').innerHTML = '<p class="plant-detail-empty">Select a plant for its output, capacity, and status.</p>';
-  });
 
-  currentData = await loadDate(select.value);
-  document.getElementById('loading').hidden = true;
-  document.getElementById('content').hidden = false;
-  renderPlantList();
-
-  document.getElementById('plant-search').addEventListener('input', (e) => {
-    currentSearch = e.target.value;
-    renderPlantList();
-  });
-
-  document.querySelectorAll('#status-filter .filter-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('#status-filter .filter-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      currentFilter = chip.dataset.status;
+    document.getElementById('plant-search').addEventListener('input', (e) => {
+      currentSearch = e.target.value;
       renderPlantList();
     });
-  });
+
+    document.querySelectorAll('#status-filter .filter-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('#status-filter .filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        currentFilter = chip.dataset.status;
+        renderPlantList();
+      });
+    });
+  } catch (e) {
+    const loading = document.getElementById('loading');
+    loading.textContent = `Couldn't load the grid data: ${e.message}. Check that data/index.json and the dated files it lists actually exist at those paths in your repo.`;
+    console.error(e);
+  }
 }
 
 init();
