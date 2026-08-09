@@ -1,0 +1,48 @@
+name: Process new daily report
+
+on:
+  push:
+    paths:
+      - "incoming/*.xlsx"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install openpyxl
+
+      - name: Parse every file waiting in incoming/
+        run: |
+          shopt -s nullglob
+          files=(incoming/*.xlsx)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No files in incoming/ - nothing to do."
+            exit 0
+          fi
+          for f in "${files[@]}"; do
+            echo "Parsing $f"
+            python3 tools/parse_report.py "$f"
+          done
+          python3 tools/build_index.py
+
+      - name: Remove processed files from incoming/
+        run: rm -f incoming/*.xlsx
+
+      - name: Commit and push the new data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ incoming/
+          git diff --staged --quiet || git commit -m "Auto-process daily report(s)"
+          git push
